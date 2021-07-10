@@ -17,11 +17,11 @@ Hello {}, I am a user or chat information finder telegram bot.
 - Send /info for your info
 - Send /info reply to a forward message for chat or user info
 
-Made by @FayasNoushad
+Made with ❤ by @Yoga_CIC
 """
 BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('⚙ Join Updates Channel ⚙', url='https://telegram.me/FayasNoushad')
+        InlineKeyboardButton('⚙ Join Updates Channel ⚙', url='https://telegram.me/SpreadNetworks')
         ]]
     )
 
@@ -75,7 +75,7 @@ def user_info(user):
     text += f"\n**Is Support:** True" if user.is_support else ""
     text += f"\n**Language Code:** {user.language_code}" if user.language_code else ""
     text += f"\n**Status:** {user.status}" if user.status else ""
-    text += f"\n\nMade by @FayasNoushad"
+    text += f"\n\nMade by @Yoga_CIC"
     return text
 
 def chat_info(chat):
@@ -90,7 +90,7 @@ def chat_info(chat):
     text += f"\n**Is Creator:** True" if chat.is_creator else ""
     text += f"\n**Is Scam:** True" if chat.is_scam else ""
     text += f"\n**Is Fake:** True" if chat.is_fake else ""
-    text += f"\n\nMade by @FayasNoushad"
+    text += f"\n\nMade by @Yoga_CIC"
     return text
 
 FayasNoushad.run()
